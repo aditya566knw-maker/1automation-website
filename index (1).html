@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#050816" />
+
+<title>1Automation — AI Automation Agency for Enterprise Workflows</title>
+<meta name="description" content="1Automation designs, builds, and operates AI-powered workflows across CRM, ERP, finance, and operations. Architected automation for teams that have outgrown Zapier." />
+<meta name="keywords" content="AI automation agency, business process automation, workflow automation, AI agents, CRM automation, ERP automation, enterprise automation, custom software integration, API development, cloud automation" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://1automation.us/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="1Automation" />
+<meta property="og:title" content="1Automation — AI Automation Agency for Enterprise Workflows" />
+<meta property="og:description" content="Architected automation your finance team can audit, your CTO can extend, and your operators actually use." />
+<meta property="og:url" content="https://1automation.us/" />
+<meta property="og:locale" content="en_US" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="1Automation — AI Automation Agency for Enterprise Workflows" />
+<meta name="twitter:description" content="Architected automation your finance team can audit, your CTO can extend, and your operators actually use." />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://1automation.us/#organization",
+      "name": "1Automation",
+      "url": "https://1automation.us/",
+      "description": "AI automation agency designing, building, and operating enterprise workflows across CRM, ERP, finance, and operations.",
+      "areaServed": ["US","CA","GB","AU"]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://1automation.us/#service",
+      "name": "1Automation",
+      "url": "https://1automation.us/",
+      "serviceType": ["AI Workflow Automation","Business Process Automation","CRM Automation","ERP Automation","API Integration","AI Agents","Cloud Automation"],
+      "areaServed": ["US","CA","GB","AU"],
+      "provider": { "@id": "https://1automation.us/#organization" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://1automation.us/#website",
+      "url": "https://1automation.us/",
+      "name": "1Automation",
+      "publisher": { "@id": "https://1automation.us/#organization" }
+    }
+  ]
+}
+</script>
+
+<style>
+/* ============ RESET & BASE ============ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #050816;
+  color: #F8FAFC;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+ul { list-style: none; }
+
+:root {
+  --bg: #050816;
+  --surface: #0B1225;
+  --card: rgba(255,255,255,0.05);
+  --border: rgba(255,255,255,0.08);
+  --border-hover: rgba(255,255,255,0.16);
+  --primary: #2563EB;
+  --primary-light: #3B82F6;
+  --accent: #00F5A0;
+  --ink: #F8FAFC;
+  --muted: #94A3B8;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============ LAYOUT UTILITIES ============ */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 96px 0; position: relative; }
+.eyebrow {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 20px;
+}
+.rule { height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent); }
+
+/* ============ NAVIGATION ============ */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  background: rgba(5, 8, 22, 0.75);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 24px;
+  height: 64px; display: flex; align-items: center; justify-content: space-between;
+}
+.logo { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.logo-mark {
+  width: 32px; height: 32px; border-radius: 8px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  display: grid; place-items: center;
+}
+.logo-mark::after { content: ""; width: 12px; height: 12px; background: var(--bg); border-radius: 2px; }
+.nav-links { display: flex; gap: 32px; align-items: center; }
+.nav-links a { color: var(--muted); font-size: 14px; transition: color 0.25s var(--ease); }
+.nav-links a:hover { color: var(--ink); }
+.nav-cta { display: flex; align-items: center; gap: 12px; }
+@media (max-width: 900px) { .nav-links { display: none; } }
+
+/* ============ BUTTONS ============ */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 22px; border-radius: 10px; font-size: 15px; font-weight: 500;
+  transition: all 0.3s var(--ease);
+}
+.btn-sm { padding: 8px 16px; font-size: 14px; }
+.btn-primary {
+  background: var(--primary); color: var(--ink);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1) inset, 0 8px 24px rgba(37,99,235,0.35);
+}
+.btn-primary:hover { background: var(--primary-light); transform: translateY(-1px); }
+.btn-ghost {
+  border: 1px solid var(--border); color: var(--ink);
+}
+.btn-ghost:hover { border-color: var(--border-hover); background: rgba(255,255,255,0.03); }
+.arrow { width: 14px; height: 14px; }
+
+/* ============ HERO ============ */
+.hero { padding: 160px 0 112px; position: relative; overflow: hidden; }
+.bloom { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.bloom::before, .bloom::after {
+  content: ""; position: absolute; border-radius: 50%; filter: blur(120px);
+}
+.bloom::before {
+  width: 640px; height: 640px; top: -160px; left: -120px;
+  background: radial-gradient(circle, #2563EB 0%, transparent 60%);
+  opacity: 0.35;
+}
+.bloom::after {
+  width: 520px; height: 520px; bottom: -120px; right: -80px;
+  background: radial-gradient(circle, #00F5A0 0%, transparent 60%);
+  opacity: 0.18;
+}
+.hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr; gap: 60px; align-items: start; }
+@media (min-width: 1024px) { .hero-inner { grid-template-columns: 1.4fr 1fr; } }
+.pill {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: rgba(255,255,255,0.03);
+  font-size: 12px; color: var(--muted); margin-bottom: 32px;
+}
+.pill-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+h1.hero-title {
+  font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 600;
+  letter-spacing: -0.03em; line-height: 1.05;
+}
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary-light), var(--accent));
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent; color: transparent;
+}
+.hero-sub {
+  margin-top: 28px; max-width: 620px; font-size: 17px; line-height: 1.7; color: var(--muted);
+}
+.hero-ctas { margin-top: 36px; display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-note { margin-top: 22px; font-size: 13px; color: rgba(148, 163, 184, 0.85); }
+
+/* Hero workflow card */
+.wf-card {
+  background: var(--card); border: 1px solid var(--border);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px; padding: 22px;
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.wf-head { display: flex; justify-content: space-between; align-items: center; font-size: 12px; }
+.wf-live { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); }
+.wf-live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); animation: pulse 2s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+.wf-steps { margin-top: 22px; display: flex; flex-direction: column; gap: 12px; font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: var(--muted); }
+.wf-step { display: flex; align-items: center; gap: 12px; }
+.wf-num {
+  width: 24px; height: 24px; border-radius: 6px;
+  background: rgba(37,99,235,0.2); border: 1px solid rgba(37,99,235,0.4);
+  color: var(--primary-light); display: grid; place-items: center; font-weight: 500;
+}
+.wf-num.accent { background: rgba(0,245,160,0.2); border-color: rgba(0,245,160,0.4); color: var(--accent); }
+.wf-sub { margin-left: 12px; padding: 4px 0 4px 12px; border-left: 1px solid rgba(255,255,255,0.1); color: rgba(148,163,184,0.7); }
+.wf-foot { margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); }
+
+/* ============ TRUST BAR ============ */
+.trust { padding: 56px 0; }
+.trust-title { text-align: center; font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 32px; }
+.trust-list { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 24px 40px; }
+.trust-list li { font-size: 15px; font-weight: 500; letter-spacing: -0.01em; color: rgba(148,163,184,0.7); }
+
+/* ============ SECTION HEADINGS ============ */
+h2.section-title { font-size: clamp(1.75rem, 3.4vw, 3rem); font-weight: 600; letter-spacing: -0.02em; line-height: 1.1; }
+.section-lead { margin-top: 24px; max-width: 720px; font-size: 17px; line-height: 1.75; color: var(--muted); }
+
+/* ============ COMPANY INTRO ============ */
+.intro-grid { display: grid; grid-template-columns: 1fr; gap: 48px; }
+@media (min-width: 900px) { .intro-grid { grid-template-columns: 1fr 1.5fr; gap: 80px; } }
+.intro-body { display: flex; flex-direction: column; gap: 20px; font-size: 17px; line-height: 1.75; color: var(--muted); }
+.intro-body p { max-width: 640px; }
+.mini-grid { display: grid; grid-template-columns: 1fr; gap: 14px; margin-top: 16px; }
+@media (min-width: 640px) { .mini-grid { grid-template-columns: repeat(3, 1fr); } }
+.mini-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 20px;
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.mini-card:hover { transform: translateY(-4px); border-color: var(--border-hover); }
+.mini-card-title { font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+.mini-card-desc { font-size: 14px; color: var(--muted); line-height: 1.55; }
+
+/* ============ WHY (4-card grid) ============ */
+.why { position: relative; overflow: hidden; }
+.why-halo {
+  position: absolute; top: -160px; right: -80px; width: 520px; height: 520px;
+  background: radial-gradient(circle, #3B82F6 0%, transparent 60%);
+  filter: blur(120px); opacity: 0.18; pointer-events: none;
+}
+.card-grid { margin-top: 64px; display: grid; grid-template-columns: 1fr; gap: 20px; }
+@media (min-width: 640px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .card-grid { grid-template-columns: repeat(4, 1fr); } }
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 16px; padding: 28px;
+  transition: transform 0.4s var(--ease), border-color 0.4s var(--ease);
+}
+.card:hover { transform: translateY(-4px); border-color: var(--border-hover); }
+.card-icon {
+  width: 44px; height: 44px; border-radius: 10px;
+  background: rgba(37,99,235,0.15); border: 1px solid rgba(37,99,235,0.25);
+  color: var(--primary-light);
+  display: grid; place-items: center; margin-bottom: 24px;
+}
+.card-icon.accent { background: rgba(0,245,160,0.15); border-color: rgba(0,245,160,0.25); color: var(--accent); }
+.card-title { font-size: 18px; font-weight: 600; margin-bottom: 12px; }
+.card-desc { font-size: 14px; line-height: 1.65; color: var(--muted); }
+.after-grid-cta { margin-top: 56px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.after-grid-cta .note { font-size: 14px; color: var(--muted); }
+.after-grid-cta .note a { color: var(--ink); text-decoration: underline; text-decoration-color: rgba(255,255,255,0.2); text-underline-offset: 4px; }
+
+/* ============ FOCUS RINGS ============ */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+/* ============ REDUCED MOTION ============ */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* ============ SKIP LINK ============ */
+.skip { position: absolute; left: -9999px; top: 0; }
+.skip:focus {
+  position: fixed; left: 16px; top: 16px; z-index: 100;
+  background: var(--primary); color: var(--ink); padding: 10px 16px; border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" role="banner">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>1Automation</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#stack">Technology</a></li>
+        <li><a href="#cases">Work</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary btn-sm">Request an audit</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="hero">
+    <div class="bloom" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          Now taking Q1 2026 engagements
+        </div>
+        <h1 class="hero-title">
+          Automation your team<br />
+          can <span class="gradient-text">actually trust.</span>
+        </h1>
+        <p class="hero-sub">
+          We design, build, and operate AI-powered workflows across CRM, ERP, finance, and operations —
+          architected so your finance team can audit them, your CTO can extend them, and your operators actually use them.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary">
+            Request a custom automation audit
+            <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#process" class="btn btn-ghost">See how we work</a>
+        </div>
+        <p class="hero-note">30-minute session. No sales pitch. We look at your stack, you keep the notes.</p>
+      </div>
+
+      <div class="wf-card" aria-hidden="true">
+        <div class="wf-head">
+          <span class="eyebrow" style="margin: 0;">workflow.v3</span>
+          <span class="wf-live"><span class="wf-live-dot"></span> live</span>
+        </div>
+        <div class="wf-steps">
+          <div class="wf-step"><span class="wf-num">1</span> trigger · new HubSpot deal</div>
+          <div class="wf-sub">→ enrich via Clearbit</div>
+          <div class="wf-step"><span class="wf-num">2</span> route · agent decides owner</div>
+          <div class="wf-sub">→ post Slack + create task</div>
+          <div class="wf-step"><span class="wf-num accent">3</span> sync · NetSuite record</div>
+        </div>
+        <div class="wf-foot">
+          <span>avg run · 1.4s</span>
+          <span>7,420 runs · 30d</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- ============ TRUST BAR ============ -->
+  <section class="trust" aria-labelledby="trust-heading">
+    <div class="container">
+      <p id="trust-heading" class="trust-title">Built on the stacks enterprise teams already run</p>
+      <ul class="trust-list">
+        <li>Salesforce</li>
+        <li>HubSpot</li>
+        <li>NetSuite</li>
+        <li>SAP</li>
+        <li>Snowflake</li>
+        <li>n8n</li>
+        <li>Temporal</li>
+        <li>LangGraph</li>
+        <li>OpenAI</li>
+        <li>Anthropic</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- ============ COMPANY INTRODUCTION ============ -->
+  <section class="section" aria-labelledby="intro-heading">
+    <div class="container">
+      <div class="intro-grid">
+        <div>
+          <div class="eyebrow">About 1Automation</div>
+          <h2 id="intro-heading" class="section-title">A senior engineering team, structured like an agency.</h2>
+        </div>
+        <div class="intro-body">
+          <p>Most companies don't need another SaaS subscription. They need someone to look at the way work moves through their business and rebuild the parts that keep breaking — the ones held together by exports, forwarded emails, and one person who knows the workaround.</p>
+          <p>1Automation is the team that does that work. We architect workflows across CRM, ERP, finance, and operations, wire in AI where it earns its place, and hand back systems that are observable, documented, and safe to change. When you'd rather we keep running them, we can.</p>
+          <p>We're remote-first, working with teams across the United States, Canada, the United Kingdom, and Australia. Every engagement is led by a senior architect — not a project manager routing tickets to juniors.</p>
+          <div class="mini-grid">
+            <div class="mini-card">
+              <div class="mini-card-title">Senior-led</div>
+              <div class="mini-card-desc">Architect on every call, from discovery through handover.</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-title">Six-week default</div>
+              <div class="mini-card-desc">Long enough to build well, short enough to matter this quarter.</div>
+            </div>
+            <div class="mini-card">
+              <div class="mini-card-title">Stack-agnostic</div>
+              <div class="mini-card-desc">We work with what you have. No forced migrations to sell licenses.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+  <!-- ============ WHY AUTOMATION MATTERS ============ -->
+  <section class="section why" aria-labelledby="why-heading">
+    <div class="why-halo" aria-hidden="true"></div>
+    <div class="container">
+      <div style="max-width: 780px;">
+        <div class="eyebrow">Why this matters now</div>
+        <h2 id="why-heading" class="section-title">The cost of manual work is compounding — quietly, and in every department.</h2>
+        <p class="section-lead">
+          Automation isn't a productivity tactic anymore. It's the difference between teams that can absorb growth and teams that hire around every new problem.
+          The companies pulling ahead this cycle aren't the ones with the most tools. They're the ones whose tools actually talk to each other.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <h3 class="card-title">Hours that never come back</h3>
+          <p class="card-desc">Operations, finance, and sales teams typically lose 20–40% of their week to work that machines should be doing. That time doesn't get reclaimed by better meetings.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg>
+          </div>
+          <h3 class="card-title">Silent failure modes</h3>
+          <p class="card-desc">Zapier setups and forwarded-email workflows break invisibly. By the time you notice, a week of records is wrong and the audit trail is gone.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2v20M2 12h20"/></svg>
+          </div>
+          <h3 class="card-title">Hiring around the problem</h3>
+          <p class="card-desc">Every quarter you delay, the workaround gets more expensive. Headcount added to route around broken process is the most expensive automation there is.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon accent">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+          </div>
+          <h3 class="card-title">The AI window is open</h3>
+          <p class="card-desc">Language models are finally reliable enough to handle judgment work — classification, routing, drafting — inside real workflows. The advantage goes to teams who put them to work now.</p>
+        </div>
+      </div>
+
+      <div class="after-grid-cta">
+        <a href="#contact" class="btn btn-primary">
+          Map your automation opportunities
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+        <span class="note">or read our <a href="#process">six-week engagement model →</a></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="rule"></div>
+
+</main>
+
+</body>
+</html>
